@@ -25,7 +25,7 @@ grid-template-columns: 1fr 2fr;
     margin-top: 50px;
     
 }
-.a2{position: relative;
+.left {position: relative;
     background-color: rgb(0, 150, 12);
     padding: 40px;
     font-family: 'Lora', serif;
@@ -53,26 +53,31 @@ hr {
 .education{
     margin-top: 20px;
 }
-.english {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(255, 255, 255);
-   
-}
-.english div{
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    background-color: rgb(123, 223, 114);
+
+ .circle{
+    display: flex;
+    margin-top: 20px;
     
 }
-.k1 {
+.circle > div{
+    background-color: rgb(255, 255, 255);
+    margin:6px;
+    padding:6px;
+    border-radius: 50%;
+}
+.circle> .circle1{
+    background-color: rgb(0, 0, 0);
+    margin: 6px;
+    padding:6px;
+    border-radius: 50%;
+
+}
+.basicright {
+    background-color: rgb(110, 218, 110);
     color:black;
     font-family: 'Libre Baskerville', serif;
 }
-.s1 {
+.right {
     margin-top:30px;
     font-size:x-large;
     margin-left:70px;
@@ -88,14 +93,46 @@ hr {
     margin-left:30px;
 
 }
-.s2 {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 30px;
-    margin-top: 10px;;
-   
-   
+.about {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(110, 218, 110);
+    padding: 10px;
 }
+.work{
+    background-color:rgb(110, 218, 110);
+    padding: 20px;
+    
+    font-size: 20px;
+    text-align: right
+}
+.about> .work{
+    background-color:rgb(110, 218, 110);
+    padding: 20px;
+    font-size: 15px;
+    text-align: left
+}
+.about2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(110, 218, 110);
+    padding: 10px;
+}
+.work2{
+    background-color:rgb(110, 218, 110);
+    padding: 20px;
+    
+font-size: 20px;
+    text-align: right
+}
+.about2> .work2{
+    background-color:rgb(110, 218, 110);
+    padding: 20px;
+    font-size: 15px;
+    text-align: left
+}
+
+
 .hrr {
     background-color: rgb(255, 255, 255);
     size:30;
@@ -108,49 +145,63 @@ hr {
     border:none
 }
 .experience {
-    margin-top:30px;
-    margin: 30px;
+   padding-left:30px;
+   
 }
-.cassa {
-    position: absolute;
-    right:0px;
-    width: 400px;
-    margin:0px;
-    margin-right: 20px;
+.skill{
+    padding-left: 30px;
 }
-.cashier {
-    position: absolute;
-    right:0px;
-    width: 400px;
+
+  
+.creativity{ width: 80%;
+   margin-left: 20px;
+   
+  
+}
+    .main-dot {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+   
     
-    margin-right: 20px;
-    margin-top:70px;
-    font-size: medium;
 }
-.i1 {
-   margin-top:80px;
-}
-.skill {
-    margin-left:30px;
-    margin-top:60px;
-}
-.cre { 
-    
-    position: relative;
-    width: 200px;
-    height: 6px;
+ .main-dot  .white{
     background-color: rgb(255, 255, 255);
-}
-.cre div {
-    position: relative;
-    width: 200px;
-    height: 6px;
-    background-color:  rgb(0, 150, 12);
-}
-.s3 {
+    margin:6px;
+ padding:6px;
+    border-radius: 50%;}
+  .main-dot  .dot{
+    background-color: rgb(0, 0, 0);
+    margin: 6px;
+    padding:6px;
+    border-radius: 50%;
     
-    position: absolute;
-    right:0px;
-    width: 300px;
+
 }
+.Communication{
+    width: 75%;
+   margin-left: 20px;
+   
+}
+
+.main-dot{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;    
+}
+.main-dot.white{ background-color: rgb(255, 255, 255);
+    margin:6px;
+    padding:6px;
+    border-radius: 50%;
+}
+.main-dot .dot{background-color: rgb(0, 0, 0);
+    margin: 6px;
+    padding:6px;
+    border-radius: 50%;
+   
+}
+
+
+
+
 
